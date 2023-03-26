@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamika Uluwatta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/247188936f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div id="blur">
+            <div id="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <div class="header-text">
+                <h1>
+                    <div class="typed"><span class="text"></span></div>
+                    <br>
+                    <div class="typed"><span class="text2"></span></div>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- //Header -->
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>
+                        Hello! My name is chamika Uluwatta. I am an undergraduate software engineering student at informatics institute of technology affiliated with university of westminster.
+
+                        I am interested in web development and software development.
+                        
+                        I am a self-motivated person who is willing to learn new things and improve my skills.
+                    </p>
+                    <br>
+                    <div class="about-me-container">
+                        <div><p>I am skilled at :</p>
+                            <ul class="skills">
+                                <br>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>MySQL</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>I am interested in:</p>
+                            <ul class="skills">
+                                <br>
+                                <li>Backend Web development</li>
+                                <li>Frontend Web development</li>
+                                <li>Software development</li>
+                            </ul>   
+                        </div>
+                        <div>
+                            <p>I am currently learning:</p>
+                            <ul class="skills">
+                                <br>
+                                <li>PHP</li>
+                                <li>Node.js</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /About -->
+
+    <!-- My Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title my-projects">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="project1">
+                    <div class="layer">
+                      <h3>Skin consultation center</h3>  
+                      <P>A software was developed for skin consulation center. Java and swing is used in development </P>
+                      <a href="https://github.com/ChamikaUluwatta"><i class="fa-solid fa-link"></i></a>
+                    </div>   
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="project2">
+                    <div class="layer">
+                        <h3>Minions</h3>  
+                        <P>A web site about minions  </P>
+                        <a href="https://github.com/ChamikaUluwatta"><i class="fa-solid fa-link"></i></a>
+                      </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="project3">
+                    <div class="layer">
+                        <h3>Simple calculator</h3>  
+                        <P> calculator project</P>
+                        <a href="https://github.com/ChamikaUluwatta"><i class="fa-solid fa-link"></i></a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ChamikaUluwatta" class="btn">See More</a>
+    </div>
+    <!-- /My Projects -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chamika.uluwatta45@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>070-5187470</p>
+                    <p>
+                        <a href="https://github.com/ChamikaUluwatta"><i class="fa-brands fa-github"></i>github.com/ChamikaUluwatta</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/chamika-uluwatta/"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/chamika-uluwatta</a>
+                    </p>
+                    <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 All Rights Reserved. <i class="fa-solid fa-heart"></i> Design By Chamika</p>
+        </div>
+    </div>
+    <!-- /contact -->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        var typed = new Typed(".text", {
+       strings: ["Hi, I'm <span class='text1'>Chamika Uluwatta</span>"],
+       typeSpeed: 50,
+       loop: false,
+       backDelay: 900,
+       backSpeed: 100,
+       showCursor: false,
+       onComplete:function(){
+            var typed = new Typed(".text2", {
+                strings: ["An undergraduate student","passionate about coding","passionate about backend development", "always eager to learn new things","a web developer"],
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 900,
+                backSpeed: 100,
+                showCursor:true,
+            });
+       }
+   });
+   </script>
+   
+</body>
+</html>
